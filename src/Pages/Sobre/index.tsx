@@ -30,10 +30,15 @@ export default function Sobre () {
             </figure>
             <article className={Styles.sobre__container}>
                 <h2 className={Styles.sobre__container__subtitle}>Leonardo Valdetaro</h2>
-                <h1 className={Styles.sobre__container__title}>Designer digital, desenvolvedor front-end.</h1>
-                <p className={Styles.sobre__container__mainText}>Por muito tempo trabalhei em empresas de publicidade e marketing; na Casa &amp; Vídeo fui designer por mais de sete anos, trabalhei em empresas como a Bloom Design, Digitalvista entre outras. Dediquei alguns anos da minha vida ensinando minha profissão, tive experiências fantásticas como instrutor de produtos Adobe (Photoshop, Illustrator e InDesign). </p>
-                <p className={Styles.sobre__container__text}>Meus projetos refletem minha paixão por esse setor, meu trabalho é repleto experimentação. Quando não estou na frente do computador trabalhando em um novo projeto, estou com a minha família, eu, minha esposa Flavia e minha filha Mariana. Ja fui um grande apaixonado pelo mar, mas agora estou um pouco afastado me dedicando a outras paixões; viagens, encontro com os amigos, culinária, músicas, cinema, livros e a incansável busca pela conhecimento.</p>
-                <p>Conheça as minha experiências profissionais.<a href="/curriculo.html" className={Styles.sobre__container__link}>Acesse o meu Currículo.</a></p>
+                <h1 className={Styles.sobre__container__title}>Frontend web developer, digital designer.</h1>
+                <p className={Styles.sobre__container__mainText}>
+                    As a transitioning professional, I have a combination of design and front-end development skills. Although my professional experience has been focused on design and advertising, since 2018 I have been seeking continuous learning and study in front-end development. 
+                </p>
+                <p className={Styles.sobre__container__text}>
+                    I have technical skills in HTML, CSS, JavaScript, and their respective frameworks such as Bootstrap and React. My specialties include responsive design, mobile-first approach, accessibility, semantic coding, SEO, UI, design system, and design components.
+                </p>
+                <p className={Styles.sobre__container__text}>
+                    As an additional advantage, I have strong communication skills and can collaborate effectively with various teams involved in digital product production. <a href="https://read.cv/leonardovaldetaro" className={Styles.sobre__container__link}>Access my resume</a></p>
                 <div className={Styles.sobre__mdSociais}>
                     <ul className={Styles.sobre__mdSociais__list}>
                         {rotasSocial.map((rota, index) =>(

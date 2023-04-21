@@ -16,17 +16,17 @@ export default function Header () {
     }];
 
     const rotaPortfolio = [{
-        label: 'Portfólio',
+        label: 'Portfolio',
         to: '/portfolio'
     }];
 
     const rotaSobre = [{
-        label: 'Sobre',
+        label: 'About',
         to: '/sobre'
     }];
 
     const rotaMail = [{
-        label: 'Contatos',
+        label: 'Contacts',
         to: '/contatos',
         icon: <MdEmail size={18} color="rgb(32,50,62)" className={Styles.header__icon} />
     }];
@@ -35,13 +35,13 @@ export default function Header () {
         label: 'Home',
         to: '/'
     },{
-        label: 'Portfólio',
+        label: 'Portfolio',
         to: '/portfolio'
     },{
-        label: 'Sobre',
+        label: 'About',
         to: '/sobre'
     },{
-        label: 'Contatos',
+        label: 'Contacts',
         to: '/contatos'
     }]
 

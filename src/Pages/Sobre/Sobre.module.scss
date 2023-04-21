@@ -35,6 +35,16 @@
         &__text {
             margin-bottom: .5em;
         }
+        &__link {
+            border-bottom: 1px solid $lightBlue;
+            color: $lightBlue;
+            transition: all .5s;
+            display: block;
+            width: fit-content;
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
     }
     &__mdSociais {
         grid-column: 1 / span 6;

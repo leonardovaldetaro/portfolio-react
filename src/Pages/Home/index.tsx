@@ -12,10 +12,10 @@ export default function Home () {
                         Leonardo Valdetaro
                     </h2>
                     <h1 className={Styles.container__title}>
-                        Desenvolvedor Front-end,<br /> Designer digital.
+                        Frontend web developer,<br /> Digital designer.
                     </h1>
                     <Botao type="button">
-                        Entre em Contato
+                        Contact me
                     </Botao>
                 </div>
                 <img src={ImageTopo} alt="imagem topo" className={Styles.home__img} />
