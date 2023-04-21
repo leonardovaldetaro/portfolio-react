@@ -1,5 +1,5 @@
 import Home from 'Pages/Home';
-import Sobre from 'Pages/Home/Sobre';
+import Sobre from 'Pages/Sobre';
 import Footer from 'components/Footer';
 import Header from 'components/Header';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';

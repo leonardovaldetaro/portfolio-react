@@ -36,4 +36,14 @@
             margin-bottom: .5em;
         }
     }
+    &__mdSociais {
+        grid-column: 1 / span 6;
+        margin-top: 1em;
+        &__list {
+            display: flex;
+            &__item {
+                list-style: none;margin-right: 1em;
+            }
+        }
+    }
 }
