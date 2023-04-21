@@ -1,0 +1,39 @@
+@import 'styles/variables';
+
+.sobre {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 0 2rem;
+    max-width: 1366px;
+    margin: 2em 0 3em;
+    p {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+    &__imgContainer {
+        grid-column: 4 / span 3;
+        position: static;
+    }
+    &__container {
+        grid-column: 7 / span 5;
+        &__title {
+            font-size: 1.8rem;
+            margin-bottom: 0.5em;
+        }
+        &__subtitle {
+            font-size: 1.2rem;
+            text-transform: initial;
+            font-weight: bold;
+            color: $dark-grey;
+            margin-bottom: 0.5rem;
+        }
+        &__mainText { 
+            font-weight: bolder;
+            margin-bottom: .5em;
+        }
+        &__text {
+            margin-bottom: .5em;
+        }
+    }
+}

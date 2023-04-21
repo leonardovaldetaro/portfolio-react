@@ -1,0 +1,126 @@
+@import "styles/_variables.scss";
+@import "styles/_breakpoints.scss";
+
+.header {
+	background-color: $backgroundHeader;
+	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	padding: 2rem 2rem;
+	width: 100%;
+	z-index: 999;
+	max-width: 1366px;
+    margin: 0 auto;
+	position: sticky;
+	left: 0;
+	right: 0;
+	top: 0;
+	a {
+		color: $dark;
+		font-weight: 700;
+		font-size: .9em;
+		letter-spacing: -1px;
+		text-transform: uppercase;
+	}
+	&__logo {
+		grid-column: 1 / span 1;
+		margin: 0;
+		width: 2em;
+	}
+	&__title {
+		align-items: center;
+		display: flex;
+		grid-column: 2 / span 2;
+		transition: all .5s;
+		a {
+			font-size: 1.5em;
+			letter-spacing: -2px;
+		}
+		&:hover {
+			transform: scale(1.1);
+			opacity: .8;
+		}
+	}
+	&__portfolio {
+		align-items: center;
+		display: flex;
+		grid-column: 5 / span 1;
+		transition: all .5s;
+		&:hover {
+			transform: scale(1.1);
+			opacity: .8;
+		}
+	}
+	&__sobre {
+		align-items: center;
+		display: flex;
+		justify-content: end;
+		grid-column: 11 / span 1;
+		transition: all .5s;
+		&:hover {
+			transform: scale(1.1);
+			opacity: .8;
+		}
+	}
+	&__mail {
+		align-items: center;
+		display: flex;
+		justify-content: end;
+		grid-column: 12 / span 1;
+		transition: all .4s;
+		&:hover {
+			transform: scale(1.1);
+			opacity: .8;
+		}
+	}
+	&__mailContainer {
+		display: flex;
+		align-items: center;
+		a {
+			display: flex;
+		}
+	}
+	&__icon {
+		margin-left: 3px;
+	}
+	&__navbar {
+		grid-column: 1 / span 1;
+		grid-row: 2;
+		margin-top: 4rem;
+		&__list {
+			display: block;
+			&__item {
+				margin: 1em 0;
+				list-style: none;
+				transition: all .5s;
+				border-bottom: 1px solid $backgroundHeader;
+				&:visited {
+					opacity: .8;
+					border-bottom: 1px solid $dark;
+					transform: scale(1.1);
+				}
+				&:hover {
+					opacity: .8;
+					border-bottom: 1px solid $dark;
+					transform: scale(1.1);
+				}
+				&:active {
+					opacity: .8;
+					border-bottom: 1px solid $dark;
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+}
+.menu__container {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	&__icon {
+		margin-right: 5px;
+	}
+	&__title {
+		font-size: 1.5em;
+	}
+}
