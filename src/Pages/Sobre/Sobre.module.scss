@@ -39,11 +39,9 @@
         &__link {
             border-bottom: 1px solid $lightBlue;
             color: $lightBlue;
-            transition: all .5s;
-            display: block;
-            width: fit-content;
+            transition: all .3s;
             &:hover {
-                transform: scale(1.03);
+                opacity: .6;
             }
         }
     }

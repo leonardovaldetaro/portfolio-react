@@ -32,13 +32,19 @@ export default function Sobre () {
                 <h2 className={Styles.sobre__container__subtitle}>Leonardo Valdetaro</h2>
                 <h1 className={Styles.sobre__container__title}>Frontend web developer, digital designer.</h1>
                 <p className={Styles.sobre__container__mainText}>
-                    As a transitioning professional, I have a combination of design and front-end development skills. Although my professional experience has been focused on design and advertising, since 2018 I have been seeking continuous learning and study in front-end development. 
+                    My name is Leonardo Valdetaro and I am passionate about technology and innovation. I am a web developer with experience in design and front-end development. 
                 </p>
                 <p className={Styles.sobre__container__text}>
-                    I have technical skills in HTML, CSS, JavaScript, and their respective frameworks such as Bootstrap and React. My specialties include responsive design, mobile-first approach, accessibility, semantic coding, SEO, UI, design system, and design components.
+                    Over the years, I have developed a passion for creating incredible and functional interfaces that not only meet the users' needs but also impress them. My goal is to make the user experience as enjoyable as possible, making navigation and interaction with the site easier.
                 </p>
                 <p className={Styles.sobre__container__text}>
-                    As an additional advantage, I have strong communication skills and can collaborate effectively with various teams involved in digital product production. <a href="https://read.cv/leonardovaldetaro" className={Styles.sobre__container__link}>Access my resume</a></p>
+                    With technical skills in HTML, CSS, and JavaScript, I am constantly updating myself with the latest frameworks, technologies, and market trends. My knowledge in web development allows me to create responsive, accessible, and SEO-optimized sites, ensuring that they are easily found by search engines.
+                </p>
+                <p className={Styles.sobre__container__text}>
+                    As a proactive collaborator, I am always looking for opportunities to learn and grow. With excellent communication skills, I am able to work in teams and contribute to a collaborative and productive environment.
+                </p>
+                <p className={Styles.sobre__container__text}>
+                    If you are looking for a passionate and experienced web developer who can turn your vision into reality, <Link className={Styles.sobre__container__link} to="/contatos">please contact me</Link>. I will be happy to talk about how I can help you achieve your online goals. <a href="https://read.cv/leonardovaldetaro" className={Styles.sobre__container__link}>Access my resume</a> and social medias.</p>
                 <div className={Styles.sobre__mdSociais}>
                     <ul className={Styles.sobre__mdSociais__list}>
                         {rotasSocial.map((rota, index) =>(
