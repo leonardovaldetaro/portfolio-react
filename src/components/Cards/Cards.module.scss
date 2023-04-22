@@ -1,3 +1,6 @@
+@import "styles/_variables.scss";
+@import "styles/_breakpoints.scss";
+
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -5,4 +8,8 @@
     grid-column: 1/span 6;
     margin-top: 2em;
     gap: 2em;
+    @media (max-width: $desktop_xsm) {
+        grid-column: 1 /span 8;
+        gap: 1em;
+    }
 }

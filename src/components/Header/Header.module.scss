@@ -15,6 +15,9 @@
 	left: 0;
 	right: 0;
 	top: 0;
+	@media (max-width: $desktop_xsm) {
+		grid-template-columns: repeat(8, 1fr);
+	}
 	a {
 		color: $dark;
 		font-weight: 700;
@@ -32,6 +35,9 @@
 		display: flex;
 		grid-column: 2 / span 2;
 		transition: all .5s;
+		@media (max-width: $desktop_xsm) {
+			display: none;
+		}
 		a {
 			font-size: 1.5em;
 			letter-spacing: -2px;
@@ -46,6 +52,9 @@
 		display: flex;
 		grid-column: 5 / span 1;
 		transition: all .5s;
+		@media (max-width: $desktop_xsm) {
+			grid-column: 3 / span 1;
+		}
 		&:hover {
 			transform: scale(1.1);
 			opacity: .8;
@@ -57,6 +66,9 @@
 		justify-content: end;
 		grid-column: 11 / span 1;
 		transition: all .5s;
+		@media (max-width: $desktop_xsm) {
+			grid-column: 6 / span 1;
+		}
 		&:hover {
 			transform: scale(1.1);
 			opacity: .8;
@@ -87,6 +99,9 @@
 		grid-column: 1 / span 1;
 		grid-row: 2;
 		margin-top: 4rem;
+		@media (max-width: $desktop_xsm) {
+			display: none;
+		}
 		&__list {
 			display: block;
 			&__item {
