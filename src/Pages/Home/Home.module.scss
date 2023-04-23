@@ -9,7 +9,7 @@
     padding: 0 2rem;
     align-content: start;
     max-width: 1366px;
-    margin: 2em;
+    margin: 2em auto;
     @media (max-width: $desktop_xsm) {
         grid-template-columns: repeat(8, 1fr);
         margin: 2em 0 0;
@@ -19,7 +19,7 @@
         border-top: 2px solid $dark;
         border-bottom: 1px solid $dark;
         @media (min-width: $mobile) {
-            grid-column: 5 / span 7;
+            grid-column: 3 / span 9;
             grid-row: 2;
             margin-top: 2em;
         }
@@ -35,7 +35,7 @@
         grid-column: 1 / span 8;
         grid-row: 2;
         @media (min-width: $mobile) {
-            grid-column: 7 / span 5;
+            grid-column: 6 / span 6;
             grid-row: 1;
             margin-bottom: 0;
         }
@@ -43,7 +43,7 @@
     }
 }
 .container {
-    grid-column: 5 / span 7;
+    grid-column: 3 / span 10;
     grid-row: 1;
     @media (max-width: $desktop_xsm) {
         grid-column: 1 / span 8;

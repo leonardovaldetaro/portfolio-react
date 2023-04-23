@@ -93,7 +93,7 @@ export default function Header () {
                     </div>
                     {rotasNav.map((rota, index) =>(
                         <li className={Styles.header__navbar__list__item} key={index}>
-                            <Link to={rota.to}>{rota.label}</Link>
+                            <Link className={Styles.header__navbar__list__item__link} to={rota.to}>{rota.label}</Link>
                         </li>
                     ))}
                 </ul>
