@@ -1,0 +1,19 @@
+@import 'styles/variables';
+@import 'styles/breakpoints';
+
+.formContainer {
+    background-color: $background;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 0 2rem;
+    max-width: 1366px;
+    margin: 2em auto 3em;
+    @media (max-width: $desktop_xsm) {
+        grid-template-columns: repeat(8, 1fr);
+    }
+    &__wrapper {
+        grid-column: 3 / span 9;
+
+    }
+}

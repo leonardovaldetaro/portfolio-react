@@ -1,4 +1,6 @@
+import Contact from 'Pages/Contact';
 import Home from 'Pages/Home';
+import Projeto from 'Pages/Projeto';
 import Sobre from 'Pages/Sobre';
 import Footer from 'components/Footer';
 import Header from 'components/Header';
@@ -12,6 +14,8 @@ export default function AppRouter () {
                 <Routes>
                     <Route index element={<Home />} />
                     <Route path='sobre' element={<Sobre />} />
+                    <Route path='contatos' element={<Contact />} />
+                    <Route path='projeto/:id' element={<Projeto />} />
                 </Routes>
                 <Footer />
             </Router>

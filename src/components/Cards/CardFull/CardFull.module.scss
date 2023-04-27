@@ -2,9 +2,7 @@
 @import 'styles/breakpoints';
 
 .cardFull {
-    background-color: $wite;
     width: 100%;
-    box-shadow: 1px 1px 3px $shadow;
     grid-column: 1/span 6;
     grid-row: 3;
     margin-top: 2em;

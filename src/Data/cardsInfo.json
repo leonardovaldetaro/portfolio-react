@@ -1,8 +1,8 @@
 [
     {
-      "title": "Desenvolvimento Front-end",
+      "title": "Desenvolvimento Front-end teste",
       "description": "Lorem ipsum dolor sit amet, consect adipiscing elit dolor sit.",
-      "photo": "assets/imagem_posts_cover.jpg",
+      "photo": "/assets/imagem_posts_cover.jpg",
       "id": 1,
       "category": {
         "id": 1,
@@ -10,9 +10,9 @@
       }
     },
     {
-      "title": "Projeto de Identidade Visual",
+      "title": "Identidade visual desenvolvida para clube de esporte e lazer.",
       "description": "Lorem ipsum dolor sit amet, consect adipiscing elit dolor sit.",
-      "photo": "assets/imagem_posts_cover.jpg",
+      "photo": "/assets/imagem-pampo-clube.jpg",
       "id": 2,
       "category": {
         "id": 2,
@@ -22,7 +22,7 @@
     {
       "title": "Desenvolvimento Front-end",
       "description": "Lorem ipsum dolor sit amet, consect adipiscing elit dolor sit.",
-      "photo": "assets/imagem_posts_cover.jpg",
+      "photo": "/assets/imagem_posts_cover.jpg",
       "id": 3,
       "category": {
         "id": 3,

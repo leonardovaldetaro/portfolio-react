@@ -1,0 +1,27 @@
+@import 'styles/variables';
+@import 'styles/breakpoints';
+
+.projeto {
+    background-color: $background;
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 0 2rem;
+    max-width: 1366px;
+    margin: 2em auto 3em;
+    @media (max-width: $desktop_xsm) {
+        grid-template-columns: repeat(8, 1fr);
+    }
+    &__imgContainer {
+        grid-column: 4 / span 7;
+    }
+    &__title {
+        grid-column: 4 / span 7;
+        grid-row: 2;
+        font-size: 2em;
+    }
+    &__textContainer {
+        grid-column: 4 / span 7;
+        grid-row: 3;
+    }
+}

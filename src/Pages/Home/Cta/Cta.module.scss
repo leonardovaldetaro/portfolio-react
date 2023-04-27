@@ -1,0 +1,46 @@
+@import 'styles/variables';
+@import 'styles/breakpoints';
+
+.ctaContainer {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    column-gap: 1em;
+    grid-column: 3/span 9;
+    grid-row: 3;
+    margin: 3em 0 2em;
+    @media (max-width: $desktop_xsm) {
+        grid-template-columns: repeat(8, 1fr);
+        grid-column: 1 /span 8;
+        column-gap: .5em;
+        margin: 4em 0 2em;
+    }
+    &__imgContainer {
+        grid-column: 1 / span 3;
+        &__img {
+            display: block;
+            border-radius: 280px;
+        }
+    }
+    &__article {
+        grid-column: 5/ span 5;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        @media (max-width: $desktop_xsm) {
+            grid-column: 1/ span 8;
+            margin-top: 2em;
+        }
+        &__title {
+            font-size: 1.3em;
+            margin-bottom: 1em;
+        }
+        &__txt {
+            column-count: 2;
+            font-size: 1.125em;
+            line-height: 1.5em;
+            @media (max-width: $desktop_xsm) {
+                column-count: 1;
+            }
+        }
+    }
+}
