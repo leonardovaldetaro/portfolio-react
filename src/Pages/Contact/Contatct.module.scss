@@ -14,7 +14,9 @@
     }
     &__wrapper {
         grid-column: 3 / span 9;
-
+        @media (max-width: $desktop_xsm) {
+            grid-column: 1 / span 8;
+        }
     }
 }
 .form__field {

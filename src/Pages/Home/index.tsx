@@ -2,7 +2,6 @@ import Styles from './Home.module.scss';
 import ImageTopo from 'assets/imagem-principal-cover.jpg';
 import Recentes from './Recentes';
 import Botao from 'components/Button';
-import Projeto from 'Pages/Projeto';
 import Cta from './Cta';
 
 export default function Home () {
@@ -24,7 +23,6 @@ export default function Home () {
                 <div className={Styles.home__divider}></div>
                 <Cta />
                 <Recentes />
-                <Projeto />
             </article>
         </>
     );
