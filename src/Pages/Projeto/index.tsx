@@ -17,7 +17,7 @@ export default function Projeto () {
                 </h1>
                 <article className={Styles.projeto__textContainer}>
                     <p className={Styles.projetos__textContainer__txt}>
-                        {projeto?.description}
+                        {projeto?.longDescription}
                     </p>
                 </article>
             </section>

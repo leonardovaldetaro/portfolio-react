@@ -1,8 +1,9 @@
 [
     {
-      "title": "Desenvolvimento Front-end teste",
+      "title": "Japiassu eventos",
       "description": "Lorem ipsum dolor sit amet, consect adipiscing elit dolor sit.",
-      "photo": "/assets/imagem_posts_cover.jpg",
+      "longDescription": "Curabitur ut semper justo, sit amet finibus velit. Donec metus ipsum, congue non placerat nec, laoreet eu erat. Maecenas vel nisl porta, facilisis dolor et, egestas sem. Aliquam eget sem id massa maximus pharetra vel at ex. Curabitur et neque scelerisque, molestie mi ac, sodales est. Vivamus semper turpis ut ligula mollis sollicitudin.",
+      "photo": "/assets/imagem_posts_japiassu.jpg",
       "id": 1,
       "category": {
         "id": 1,
@@ -10,8 +11,9 @@
       }
     },
     {
-      "title": "Identidade visual desenvolvida para clube de esporte e lazer.",
+      "title": "Itacoatiara Pampo Clube",
       "description": "Lorem ipsum dolor sit amet, consect adipiscing elit dolor sit.",
+      "longDescription": "Curabitur ut semper justo, sit amet finibus velit. Donec metus ipsum, congue non placerat nec, laoreet eu erat. Maecenas vel nisl porta, facilisis dolor et, egestas sem. Aliquam eget sem id massa maximus pharetra vel at ex. Curabitur et neque scelerisque, molestie mi ac, sodales est. Vivamus semper turpis ut ligula mollis sollicitudin.",
       "photo": "/assets/imagem-pampo-clube.jpg",
       "id": 2,
       "category": {
@@ -22,6 +24,7 @@
     {
       "title": "Desenvolvimento Front-end",
       "description": "Lorem ipsum dolor sit amet, consect adipiscing elit dolor sit.",
+      "longDescription": "Curabitur ut semper justo, sit amet finibus velit. Donec metus ipsum, congue non placerat nec, laoreet eu erat. Maecenas vel nisl porta, facilisis dolor et, egestas sem. Aliquam eget sem id massa maximus pharetra vel at ex. Curabitur et neque scelerisque, molestie mi ac, sodales est. Vivamus semper turpis ut ligula mollis sollicitudin.",
       "photo": "/assets/imagem_posts_cover.jpg",
       "id": 3,
       "category": {
@@ -32,6 +35,7 @@
     {
       "title": "Desenvolvimento Front-end",
       "description": "Lorem ipsum dolor sit amet, consect adipiscing elit dolor sit.",
+      "longDescription": "Curabitur ut semper justo, sit amet finibus velit. Donec metus ipsum, congue non placerat nec, laoreet eu erat. Maecenas vel nisl porta, facilisis dolor et, egestas sem. Aliquam eget sem id massa maximus pharetra vel at ex. Curabitur et neque scelerisque, molestie mi ac, sodales est. Vivamus semper turpis ut ligula mollis sollicitudin.",
       "photo": "assets/imagem_posts_cover.jpg",
       "id": 4,
       "category": {
