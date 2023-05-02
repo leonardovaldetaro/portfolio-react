@@ -1,7 +1,7 @@
 import Styles from './Header.module.scss';
 import { ReactComponent as Logo } from 'assets/logotipo-lv.svg';
 import { MdEmail, MdKeyboardDoubleArrowDown } from 'react-icons/md';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 
 export default function Header () {
@@ -83,7 +83,7 @@ export default function Header () {
                     </div>
                 ))}
             </div>
-            <nav className={Styles.header__navbar}>
+            <nav className={Styles.header__navbar} id='nav'>
                 <ul className={Styles.header__navbar__list}>
                     <div className={Styles.menu__container}>
                         <MdKeyboardDoubleArrowDown size={18} color="rgb(32,50,62)" className={Styles.menu__container__icon} />
@@ -93,7 +93,14 @@ export default function Header () {
                     </div>
                     {rotasNav.map((rota, index) =>(
                         <li className={Styles.header__navbar__list__item} key={index}>
-                            <Link className={Styles.header__navbar__list__item__link} to={rota.to}>{rota.label}</Link>
+                            <NavLink 
+                                className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "active" : ""
+                                }
+                                to={rota.to}
+                            >
+                                {rota.label}
+                            </NavLink>
                         </li>
                     ))}
                 </ul>

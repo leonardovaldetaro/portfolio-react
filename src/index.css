@@ -37,3 +37,15 @@ body {
 .footer {
 	grid-area: footer;
 }
+
+/* menu lateral header active  */
+.active {
+	border-bottom: 2px solid;
+}
+/* input error do formulário */
+.input-error {
+	border-bottom: 1px solid red !important; 
+}
+.checkbox-error {
+	border: 1px solid red !important;
+}

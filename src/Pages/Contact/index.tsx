@@ -1,25 +1,107 @@
 import Styles from './Contatct.module.scss';
+import { useForm } from 'react-hook-form';
 
 export default function Contact () {
+    const { register, handleSubmit, formState: {errors} } = useForm();
+    const onSubmit = (_data: any) => {};
+
     return (
         <section className={Styles.formContainer}>
+            
+            <article className={Styles.formContainer__header}>
+                <h2 className={Styles.formContainer__header__subtitle}>Get in touch</h2>
+                <h1 className={Styles.formContainer__header__title}>Let&rsquo;s talk about what we can make, build, scale together</h1>
+            </article>
+
             <article id='wrapper' className={Styles.formContainer__wrapper}>
-                <form action='' className={Styles.form}>
-                    <p className={Styles.form__field}>
-                        <label className={Styles.form__field__label} htmlFor='name'>Name</label>
-                        <input className={Styles['text-input']} id='name' name='name' required type='text' />
-                    </p>
-                    <p className={Styles.form__field}>
-                        <label className={Styles.form__field__label} htmlFor='email'>E-mail</label>
-                        <input className={Styles['text-input']} id='email' name='email' required type='email' />
-                    </p>
-                    <p className={Styles.form__field}>
-                        <label className={Styles.form__field__label} htmlFor='message'>Message</label>
-                        <textarea className={Styles['text-input']} id='message' name='message' required></textarea>
-                    </p>
-                    <p className={Styles.field__button}>
-                        <input className={Styles.button} type='submit' value='Send Message' />
-                    </p>
+                <form 
+                    className={Styles.form}
+                    action="/api"
+                    method="post" // default to post
+                    onSubmit={() => {}} // function to be called before the request
+                >
+
+                    <div className={Styles.form__field}>
+                        <label 
+                            className={Styles.form__field__label} 
+                            htmlFor='name'
+                        >
+                            Name*
+                        </label>
+
+                        <input 
+                            className={errors?.name && "input-error"}
+                            id='name'
+                            type='text'
+                            {...register('name', {required: true})}
+                        />
+                        {errors?.name?.type === 'required' && <p className={Styles.error__message}>Name is required</p>}
+                    </div>
+
+                    <div className={Styles.form__field}>
+                        <label 
+                            className={Styles.form__field__label} 
+                            htmlFor='email'
+                        >
+                            E-mail
+                        </label>
+
+                        <input 
+                            className={errors?.name && "input-error"}
+                            id='email' 
+                            type='email'
+                            {...register('email', {required: true, pattern: /@/ })} 
+                        />
+                        {errors?.email?.type === 'required' && <p className={Styles.error__message}>E-mail is required</p>}
+                        {errors?.email?.type === 'pattern' && <p className={Styles.error__message}> Please insert an valid e-mail</p>}
+                    </div>
+
+                    <div className={Styles.form__field}>
+                        <label 
+                            className={Styles.form__field__label} 
+                            htmlFor='message'
+                        >
+                            Message
+                        </label>
+
+                        <textarea 
+                            className={errors?.name && "input-error"}
+                            id='message' 
+                            required
+                            {...register('message', {required: true})} 
+                        >
+                        </textarea>
+                        {errors?.message?.type === 'required' && <p className={Styles.error__message}>Message is required</p>}
+
+                    </div>
+
+                    <div className={Styles.form__checkbox}>
+                        <div className={Styles.form__checkbox__wrapper}>
+                            <input 
+                            className={errors?.name && "checkbox-error"}
+                            id='privacy-policy' 
+                            type="checkbox" 
+                            required
+                            {...register('privacyPolicy', {required: true})} 
+                            />
+
+                            <label htmlFor="privacy-policy">
+                                *By submitting below, I consent to allow Leonardo Valdetaro to process my personal information submitted above to provide me with the content requested.
+                            </label>
+                            {errors?.privacyPolicy?.type === 'required' && <p className={Styles.error__message}>Please, you must agree the privacy policy.</p>}
+
+                        </div>
+                    </div>
+
+                    <div className={Styles.field__button}>
+                        <button 
+                            className={Styles.button}
+                            onClick={() => handleSubmit(onSubmit)()}
+                        >
+                            Send Message
+                        </button>
+                    </div>
+
                 </form>
             </article>
         </section>

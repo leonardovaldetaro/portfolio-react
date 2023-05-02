@@ -20,7 +20,6 @@
 	}
 	a {
 		color: $dark;
-		font-weight: 700;
 		font-size: .9em;
 		letter-spacing: -1px;
 		text-transform: uppercase;
@@ -33,6 +32,7 @@
 	&__title {
 		align-items: center;
 		display: flex;
+		font-weight: 700;
 		grid-column: 2 / span 2;
 		transition: all .5s;
 		@media (max-width: $desktop_xsm) {
@@ -50,6 +50,7 @@
 	&__portfolio {
 		align-items: center;
 		display: flex;
+		font-weight: 700;
 		grid-column: 5 / span 1;
 		transition: all .5s;
 		@media (max-width: $desktop_xsm) {
@@ -64,6 +65,7 @@
 		align-items: center;
 		display: flex;
 		justify-content: end;
+		font-weight: 700;
 		grid-column: 11 / span 1;
 		transition: all .5s;
 		@media (max-width: $desktop_xsm) {
@@ -78,6 +80,7 @@
 		align-items: center;
 		display: flex;
 		justify-content: end;
+		font-weight: 700;
 		grid-column: 12 / span 1;
 		transition: all .4s;
 		&:hover {
@@ -111,6 +114,7 @@
 					display: inline-block;
     				position: relative;
 					transition: all .4s;
+					font-weight: 400;
 					&:hover {
 						transform: scale(1.1);
 					}

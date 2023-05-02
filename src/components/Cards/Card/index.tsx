@@ -11,7 +11,7 @@ export default function Card (props: Props) {
 
     return (
         <article className={Styles.card}>
-            <Link to={`/projeto/${props.id}`} className={Styles.card__link}>
+            <Link to={`/projeto/${props.id}`} className={Styles.card__link} target='_top'>
                 <div className={Styles.card__imgContainer}>
                     <img src={photo} alt="Imagem" className={Styles.card__imgContainer__img} />
                 </div>
