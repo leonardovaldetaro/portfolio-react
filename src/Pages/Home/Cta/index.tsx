@@ -1,5 +1,5 @@
 import Styles from './Cta.module.scss';
-import ImageCta from 'assets/friedolin_BW.png';
+import ImageCta from 'assets/imagem_posts_cover.jpg';
 
 export default function Cta () {
     return (
@@ -8,9 +8,12 @@ export default function Cta () {
                 <img className={Styles.ctaContainer__imgContainer__img} src={ImageCta} alt="" />
             </div>
             <article className={Styles.ctaContainer__article}>
-                <h2 className={Styles.ctaContainer__article__title}>Frog</h2>
+                <h3 className={Styles.ctaContainer__article__subTitle}>work</h3>
+                <h2 className={Styles.ctaContainer__article__title}>Bring bold ideas to life</h2>
+                <h4 className={Styles.ctaContainer__article__lead}>Imagine and build experiences, products and businesses that disrupt the status quo, win hearts and realize the future.</h4>
                 <p className={Styles.ctaContainer__article__txt}>
-                    If you're looking for a way to stand out on the internet and attract more customers, front-end development and digital design are essential to your success. With a team of experts in front-end development and digital design, we can create a professional, modern, and search engine-optimized website. <br />Our creation process starts with a complete analysis of your business and your target audience, so we can understand your needs and goals. Then, we develop a personalized strategy for front-end development and digital design, which takes into account the latest trends and best practices in the market.
+                My creation process starts with a complete analysis of your business and your target audience, so I can understand your needs and goals. Then, I develop a personalized strategy for front-end development and digital design, which takes into account the latest trends and best practices in the industry.
+                Whether you need a new website or want to revamp your existing one, I'm here to help you achieve your online goals. So, don't hesitate to contact me to discuss your project and see how I can help you succeed on the web.
                 </p> 
             </article>
         </section>

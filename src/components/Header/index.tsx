@@ -1,6 +1,6 @@
 import Styles from './Header.module.scss';
-import { ReactComponent as Logo } from 'assets/logotipo-lv.svg';
-import { MdEmail, MdKeyboardDoubleArrowDown } from 'react-icons/md';
+import { ReactComponent as Logo } from 'assets/simbol.svg';
+import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
 import { Link, NavLink } from 'react-router-dom';
 
 
@@ -28,7 +28,6 @@ export default function Header () {
     const rotaMail = [{
         label: 'Contacts',
         to: '/contatos',
-        icon: <MdEmail size={18} color="rgb(32,50,62)" className={Styles.header__icon} />
     }];
 
     const rotasNav = [{
@@ -65,21 +64,42 @@ export default function Header () {
             <div className={Styles.header__portfolio}>
                 {rotaPortfolio.map((rota, index) => (
                     <div key={index}>
-                        <Link to={rota.to}>{rota.label}</Link>
+                        <NavLink 
+                        className={({ isActive, isPending }) =>
+                            isPending ? "pending" : isActive ? "active" : ""
+                        }
+                        to={rota.to}
+                    >
+                        {rota.label}
+                    </NavLink>
                     </div>
                 ))}
             </div>
             <div className={Styles.header__sobre}>
                 {rotaSobre.map((rota, index) => (
                     <div key={index}>
-                        <Link to={rota.to}>{rota.label}</Link>
+                        <NavLink
+                        className={({ isActive, isPending }) =>
+                            isPending ? "pending" : isActive ? "active" : ""
+                        }
+                        to={rota.to}
+                    >
+                        {rota.label}
+                    </NavLink>
                     </div>
                 ))}
             </div>
             <div className={Styles.header__mail}>
                 {rotaMail.map((rota, index) => (
                     <div key={index} className={Styles.header__mailContainer}>
-                        <Link to={rota.to}>{rota.label}{rota.icon}</Link>
+                        <NavLink
+                            className={({ isActive, isPending }) =>
+                                isPending ? "pending" : isActive ? "active" : ""
+                            }
+                            to={rota.to}
+                        >
+                            {rota.label}
+                        </NavLink>
                     </div>
                 ))}
             </div>
@@ -93,7 +113,7 @@ export default function Header () {
                     </div>
                     {rotasNav.map((rota, index) =>(
                         <li className={Styles.header__navbar__list__item} key={index}>
-                            <NavLink 
+                            <NavLink
                                 className={({ isActive, isPending }) =>
                                     isPending ? "pending" : isActive ? "active" : ""
                                 }

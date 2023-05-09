@@ -1,5 +1,6 @@
 import Styles from './Contatct.module.scss';
 import { useForm } from 'react-hook-form';
+import { MdOutlinePlace } from 'react-icons/md';
 
 export default function Contact () {
     const { register, handleSubmit, formState: {errors} } = useForm();
@@ -7,10 +8,14 @@ export default function Contact () {
 
     return (
         <section className={Styles.formContainer}>
+
+            <article className={Styles.formContainer__side}>
+                <h3 className={Styles.formContainer__side__subTitle}>contact</h3>
+                <h2 className={Styles.formContainer__side__title}>Get in touch — let&rsquo;s work together.</h2>
+            </article>
             
             <article className={Styles.formContainer__header}>
-                <h2 className={Styles.formContainer__header__subtitle}>Get in touch</h2>
-                <h1 className={Styles.formContainer__header__title}>Let&rsquo;s talk about what we can make, build, scale together</h1>
+                <h1 className={Styles.formContainer__header__title}>Got a project? Drop me a line if you want to work together on something exciting. Big or small. Mobile or web.</h1>
             </article>
 
             <article id='wrapper' className={Styles.formContainer__wrapper}>

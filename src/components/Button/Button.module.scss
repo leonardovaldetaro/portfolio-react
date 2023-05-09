@@ -3,20 +3,17 @@
 
 
 .botao {
-    background-color: $dark;
-    border-radius: 5px;
-    padding: 1em .5em;
-    color: $wite;
-    box-shadow: 1px 2px 3px $shadow;
+    color: $dark;
     transition: all .5s;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-right: .5em;
     @media (max-width: $desktop_xsm) {
         padding: 0.5em 2em;
         margin-bottom: 1.5em;
     }
 }
 .botao:hover {
-    box-shadow: 0px 2px 10px 1px $shadow;
-    color: $light-grey;
     transform: scale(1.1);
     border-bottom: 1px solid $dark;
 }

@@ -1,7 +1,7 @@
 import Styles from './Sobre.module.scss';
-import ImageSobre from 'assets/img-field-sobre.png';
 import { FaLinkedin, FaGithubSquare, FaBehanceSquare, FaDribbbleSquare } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import ImageTopo from 'assets/imagem-principal-cover.jpg';
 
 
 const rotasSocial = [{
@@ -25,20 +25,40 @@ const rotasSocial = [{
 export default function Sobre () {
     return (
         <section className={Styles.sobre}>
-            <figure className={Styles.sobre__imgContainer}>
-                <img className={Styles.sobre__img} src={ImageSobre} alt="Imagem" />
-            </figure>
             <article className={Styles.sobre__container}>
-                <h2 className={Styles.sobre__container__subtitle}>Leonardo Valdetaro</h2>
-                <h1 className={Styles.sobre__container__title}>Frontend web developer, digital designer.</h1>
+                <h2 className={Styles.sobre__container__subtitle}>A FEW WORDS ABOUT ME</h2>
+                <h1 className={Styles.sobre__container__title}>I&rsquo;m a skilled front-end web developer and experienced digital designer. I specialize in creating responsive websites and functional user interfaces that meet the needs of my clients and their target audience.</h1>
                 <p className={Styles.sobre__container__mainText}>
-                    My name is Leonardo Valdetaro and I am passionate about technology and innovation. I am a web developer with experience in design and front-end development. 
+                My process starts with a thorough analysis of your business and target audience to understand your needs and goals. From there, I develop a personalized strategy for front-end development and digital design that incorporates the latest trends and best practices in the industry. 
                 </p>
+                <img src={ImageTopo} alt="" className={Styles.sobre__container__img} />
+                <div className={Styles.sobre__container__tools}>
+                    <h2 className={Styles.sobre__container__tools__titleDesign}>Design tools</h2>
+                    <h3 className={Styles.sobre__container__tools__namesDesign}>
+                        Photoshop<em> / </em>
+                        Illustrator <em> / </em> Figma<em> / </em>
+                        InDesign<em> / </em>
+                        UX &amp; UI<em> / </em>
+                        Design System<em> / </em>
+                        Design Pattern<em> / </em>
+                        Design Components<em> / </em>Design Thinking
+                    </h3>
+                    <h2 className={Styles.sobre__container__tools__titleTools}>Frontend skills</h2>
+                    <h3 className={Styles.sobre__container__tools__namesTools}>
+                        HTML<em> / </em>
+                        CSS<em> / </em>
+                        javaScript<em> / </em>
+                        React.js<em> / </em>
+                        Next.js<em> / </em>
+                        Bootstrap<em> / </em>
+                        SASS<em> / </em>
+                        TypeScript<em> / </em>
+                        Git<em> / </em>GitHub <em> / </em>
+                        Wordpress<em> / </em>seo
+                    </h3>
+                </div>
                 <p className={Styles.sobre__container__text}>
                     Over the years, I have developed a passion for creating incredible and functional interfaces that not only meet the users' needs but also impress them. My goal is to make the user experience as enjoyable as possible, making navigation and interaction with the site easier.
-                </p>
-                <p className={Styles.sobre__container__text}>
-                    With technical skills in HTML, CSS, and JavaScript, I am constantly updating myself with the latest frameworks, technologies, and market trends. My knowledge in web development allows me to create responsive, accessible, and SEO-optimized sites, ensuring that they are easily found by search engines.
                 </p>
                 <p className={Styles.sobre__container__text}>
                     As a proactive collaborator, I am always looking for opportunities to learn and grow. With excellent communication skills, I am able to work in teams and contribute to a collaborative and productive environment.

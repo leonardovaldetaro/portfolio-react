@@ -3,6 +3,8 @@ import ImageTopo from 'assets/imagem-principal-cover.jpg';
 import Recentes from './Recentes';
 import Botao from 'components/Button';
 import Cta from './Cta';
+import CallToWork from './CallToWork';
+import { Link } from 'react-router-dom';
 
 export default function Home () {
     return (
@@ -15,14 +17,21 @@ export default function Home () {
                     <h1 className={Styles.container__title}>
                         Frontend web developer,<br /> Digital designer.
                     </h1>
+                    <p className={Styles.container__text}>
+                    As a front-end web developer and digital designer, I'm passionate about creating professional, modern, and search engine-optimized websites that stand out on the internet and attract more customers.
+                    </p>
+                    <div className={Styles.container__botaoWraper}>
                     <Botao type="button">
-                        Contact me
+                        Contact
                     </Botao>
+                    or
+                    <Link className={Styles.container__botaoWraper__link} to={"/sobre"}>Read About Me</Link>
+                    </div>
                 </div>
                 <img src={ImageTopo} alt="imagem topo" className={Styles.home__img} />
-                <div className={Styles.home__divider}></div>
                 <Cta />
                 <Recentes />
+                <CallToWork />
             </article>
         </>
     );

@@ -14,21 +14,6 @@
         grid-template-columns: repeat(8, 1fr);
         margin: 2em 0 0;
     }
-    &__divider {
-        height: 1.5em;
-        border-top: 2px solid $dark;
-        border-bottom: 1px solid $dark;
-        @media (min-width: $mobile) {
-            grid-column: 3 / span 9;
-            grid-row: 2;
-            margin-top: 2em;
-        }
-        @media (max-width: $desktop_xsm) {
-            grid-column: 1 / span 8;
-            grid-row: 3;
-        }
-        
-    }
     &__img {
         margin-bottom: 1.5em;
         width: 100%;
@@ -43,21 +28,20 @@
     }
 }
 .container {
-    grid-column: 3 / span 10;
+    grid-column: 2 / span 10;
     grid-row: 1;
+    margin-bottom: 8em;
     @media (max-width: $desktop_xsm) {
         grid-column: 1 / span 8;
     }
     &__name {
         font-size: 1em;
-        font-weight: 700;
+        font-weight: 500;
         color: $dark-grey;
-        margin-bottom: .5em;
+        margin-bottom: 2em;
         @media (min-width: $mobile) {  
-            padding-top: 2em; 
-        }
-        
-        
+            padding-top: 1em; 
+        } 
     }
     &__title {
         font-size: 2.5em;
@@ -73,5 +57,35 @@
             margin-bottom: .5em;
             font-size: 2em;
 		}
+    }
+    &__text {
+        font-size: 1em;
+        font-weight: 500;
+        color: $dark-grey;
+        margin-bottom: .75em;
+        line-height: 1.5rem;
+        @media (min-width: $mobile) {
+            transform: translate3d(0, 0, 0);
+            width: 50%;
+        }
+    }
+    &__botaoWraper {
+        display: flex;
+        align-items: center;
+        &__link {
+            color: $dark;
+            transition: all .5s;
+            font-weight: 700;
+            font-size: 1.2em;
+            margin-left: .5em;
+            border-bottom: 1px solid rgba(0,0,0,0);
+            @media (max-width: $desktop_xsm) {
+                margin-bottom: 1.5em;
+            }
+            &:hover {
+                border-bottom: 1px solid $dark;
+                transform: scale(1.1);
+            }
+        }
     }
 }

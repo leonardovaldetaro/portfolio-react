@@ -24,10 +24,16 @@
 		letter-spacing: -1px;
 		text-transform: uppercase;
 	}
+	&__img {
+		width: 3em;
+	}
 	&__logo {
 		grid-column: 1 / span 1;
 		margin: 0;
 		width: 2em;
+		a {
+			display: block;
+		}
 	}
 	&__title {
 		align-items: center;
@@ -40,18 +46,19 @@
 		}
 		a {
 			font-size: 1.5em;
-			letter-spacing: -2px;
+			text-transform: capitalize;
+			letter-spacing: -1px;
 		}
 		&:hover {
-			transform: scale(1.1);
 			opacity: .8;
 		}
 	}
 	&__portfolio {
 		align-items: center;
 		display: flex;
+		justify-content: end;
 		font-weight: 700;
-		grid-column: 5 / span 1;
+		grid-column: 10 / span 1;
 		transition: all .5s;
 		@media (max-width: $desktop_xsm) {
 			grid-column: 3 / span 1;
@@ -102,8 +109,8 @@
 		grid-column: 1 / span 1;
 		grid-row: 2;
 		margin-top: 4rem;
+		display: none;
 		@media (max-width: $desktop_xsm) {
-			display: none;
 		}
 		&__list {
 			display: block;

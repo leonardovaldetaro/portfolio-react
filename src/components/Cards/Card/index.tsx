@@ -2,11 +2,12 @@ import Styles from './Card.module.scss';
 import CardsInfo from 'Data/cardsInfo.json';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
+import { MdTrendingFlat } from 'react-icons/md';
 
 type Props = typeof CardsInfo[0];
 
 export default function Card (props: Props) {
-    const {photo, category, description, title} = props;
+    const {photo, category, direct, title} = props;
 
 
     return (
@@ -25,7 +26,10 @@ export default function Card (props: Props) {
                     >
                         {category.label}
                     </h3>
-                    <p className={Styles.card__descricao}>{description} </p>
+                    <p className={Styles.card__descricao}>
+                        {direct} 
+                        <MdTrendingFlat size={18} color="rgb(126,132,137)" className={Styles.card__descricao__icon} /> 
+                    </p>
                 </div>
             </Link>
         </article>
