@@ -1,6 +1,5 @@
-import Styles from './Contatct.module.scss';
+import Styles from './Contact.module.scss';
 import { useForm } from 'react-hook-form';
-import { MdOutlinePlace } from 'react-icons/md';
 
 export default function Contact () {
     const { register, handleSubmit, formState: {errors} } = useForm();

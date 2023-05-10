@@ -1,5 +1,5 @@
 import Styles from './Cta.module.scss';
-import ImageCta from 'assets/imagem_posts_cover.jpg';
+import ImageCta from 'assets/teste3.jpg';
 
 export default function Cta () {
     return (

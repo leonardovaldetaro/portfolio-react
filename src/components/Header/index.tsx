@@ -1,6 +1,5 @@
 import Styles from './Header.module.scss';
 import { ReactComponent as Logo } from 'assets/simbol.svg';
-import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
 import { Link, NavLink } from 'react-router-dom';
 
 
@@ -16,8 +15,8 @@ export default function Header () {
     }];
 
     const rotaPortfolio = [{
-        label: 'Portfolio',
-        to: '/portfolio'
+        label: 'Projecs',
+        to: '/'
     }];
 
     const rotaSobre = [{
@@ -29,21 +28,6 @@ export default function Header () {
         label: 'Contacts',
         to: '/contatos',
     }];
-
-    const rotasNav = [{
-        label: 'Home',
-        to: '/'
-    },{
-        label: 'Portfolio',
-        to: '/portfolio'
-    },{
-        label: 'About',
-        to: '/sobre'
-    },{
-        label: 'Contacts',
-        to: '/contatos'
-    }]
-
 
     return (
         <header className={Styles.header}>
@@ -103,28 +87,6 @@ export default function Header () {
                     </div>
                 ))}
             </div>
-            <nav className={Styles.header__navbar} id='nav'>
-                <ul className={Styles.header__navbar__list}>
-                    <div className={Styles.menu__container}>
-                        <MdKeyboardDoubleArrowDown size={18} color="rgb(32,50,62)" className={Styles.menu__container__icon} />
-                        <h2 className={Styles.menu__container__title}>
-                            Menu
-                        </h2>
-                    </div>
-                    {rotasNav.map((rota, index) =>(
-                        <li className={Styles.header__navbar__list__item} key={index}>
-                            <NavLink
-                                className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "active" : ""
-                                }
-                                to={rota.to}
-                            >
-                                {rota.label}
-                            </NavLink>
-                        </li>
-                    ))}
-                </ul>
-            </nav>
         </header>
     );
 }

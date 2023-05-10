@@ -21,6 +21,9 @@
         font-weight: bold;
         letter-spacing: -1px;
         grid-row: 2;
+        @media (max-width: $desktop_xsm) {
+            grid-column: 1/ span 4;
+        }
     }
     &__subTitle {
         grid-column: 1/span 2;
@@ -30,5 +33,8 @@
         letter-spacing: 2px;
         margin-bottom: 1em;
         grid-row: 1;
+        @media (max-width: $desktop_xsm) {
+            grid-column: 1/ span 4;
+        }
     }
 }

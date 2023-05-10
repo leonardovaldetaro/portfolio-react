@@ -7,22 +7,24 @@
     column-gap: 1em;
     grid-column: 2/span 10;
     grid-row: 3;
-    margin: 3em 0 2em;
+    margin: 4em 0 2em;
     @media (max-width: $desktop_xsm) {
         grid-template-columns: repeat(8, 1fr);
         grid-column: 1 /span 8;
         column-gap: .5em;
-        margin: 4em 0 2em;
+        margin: 2em 0 2em;
     }
     &__imgContainer {
-        grid-column: 1 / span 3;
+        grid-column: 1 / span 4;
+        @media (max-width: $desktop_xsm) {
+            grid-column: 1 / span 8;
+        }
         &__img {
             display: block;
-            border-radius: 280px;
         }
     }
     &__article {
-        grid-column: 5/ span 5;
+        grid-column: 6/ span 5;
         display: flex;
         flex-direction: column;
         align-self: center;

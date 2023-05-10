@@ -48,6 +48,9 @@
             margin: 4em 0 6em;
             padding: 0 0 8em;
             border-bottom: 1px solid $light-grey;
+            @media (max-width: $desktop_xsm) {
+                padding: 0 0 5em;
+            }
             &__titleDesign {
                 color: $dark-grey;
                 font-size: .875rem;
@@ -56,6 +59,9 @@
                 padding-top: 5px;
                 padding-bottom: 5px;
                 grid-column: 2 / span 3;
+                @media (max-width: $desktop_xsm) {
+                    grid-column: 1 / span 3;
+                }
             }
             &__titleTools {
                 color: $dark-grey;
@@ -66,6 +72,9 @@
                 padding-bottom: 5px;
                 grid-column: 7 / span 3;
                 grid-row: 1;
+                @media (max-width: $desktop_xsm) {
+                    grid-column: 6 / span 3;
+                }
             }
             &__namesDesign {
                 color: $dark;

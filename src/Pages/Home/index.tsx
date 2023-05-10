@@ -1,5 +1,5 @@
 import Styles from './Home.module.scss';
-import ImageTopo from 'assets/imagem-principal-cover.jpg';
+import ImageTopo from 'assets/imagem-principal.jpg';
 import Recentes from './Recentes';
 import Botao from 'components/Button';
 import Cta from './Cta';

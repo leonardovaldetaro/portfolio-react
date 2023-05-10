@@ -9,8 +9,9 @@
     font-size: 1.2em;
     margin-right: .5em;
     @media (max-width: $desktop_xsm) {
-        padding: 0.5em 2em;
-        margin-bottom: 1.5em;
+        padding: 0;
+        margin-bottom: 0;
+        
     }
 }
 .botao:hover {

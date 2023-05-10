@@ -5,8 +5,11 @@
 .callToWork {
     grid-column: 2 /span 10;
     grid-row: 5;
-    margin: 4em 0 2em;
+    margin: 3em 0;
     text-align: center;
+    @media (max-width: $desktop_xsm) {
+        grid-column: 1/ span 8;
+    }
     &__title {
         color: $dark-grey;
         font-weight: 500;
@@ -18,9 +21,11 @@
         color: $dark;
         font-weight: 700;
         font-size: 3em;
-        margin-bottom: 3em;
         transition: all .4s;
         position: relative;
+        @media (max-width: $desktop_xsm) {
+            font-size: 2em;
+        }
         &:hover::before {
             right: 0;
         }
