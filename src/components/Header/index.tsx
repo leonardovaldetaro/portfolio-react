@@ -15,7 +15,7 @@ export default function Header () {
     }];
 
     const rotaPortfolio = [{
-        label: 'Projecs',
+        label: 'Projects',
         to: '/'
     }];
 
@@ -34,14 +34,14 @@ export default function Header () {
             <div className={Styles.header__logo}>
                 {rotaLogo.map((rota, index) => (
                     <figure key={index}>
-                        <Link to={rota.to}>{rota.label}</Link>
+                        <Link to={rota.to} preventScrollReset={true}>{rota.label}</Link>
                     </figure>
                 ))}
             </div>
             <div className={Styles.header__title}>
                 {rotaName.map((rota, index) => (
                     <div key={index}>
-                        <Link to={rota.to}>{rota.label}</Link>
+                        <Link to={rota.to} preventScrollReset={true}>{rota.label}</Link>
                     </div>
                 ))}
             </div>
@@ -50,9 +50,10 @@ export default function Header () {
                     <div key={index}>
                         <NavLink 
                         className={({ isActive, isPending }) =>
-                            isPending ? "pending" : isActive ? "active" : ""
-                        }
-                        to={rota.to}
+                        isPending ? "pending" : isActive ? "active" : ""
+                    }
+                    preventScrollReset={true}
+                    to={rota.to}
                     >
                         {rota.label}
                     </NavLink>
@@ -64,9 +65,10 @@ export default function Header () {
                     <div key={index}>
                         <NavLink
                         className={({ isActive, isPending }) =>
-                            isPending ? "pending" : isActive ? "active" : ""
-                        }
-                        to={rota.to}
+                        isPending ? "pending" : isActive ? "active" : ""
+                    }
+                    to={rota.to}
+                    preventScrollReset={true}
                     >
                         {rota.label}
                     </NavLink>
@@ -78,9 +80,10 @@ export default function Header () {
                     <div key={index} className={Styles.header__mailContainer}>
                         <NavLink
                             className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "active" : ""
-                            }
-                            to={rota.to}
+                            isPending ? "pending" : isActive ? "active" : ""
+                        }
+                        to={rota.to}
+                        preventScrollReset={false}
                         >
                             {rota.label}
                         </NavLink>
