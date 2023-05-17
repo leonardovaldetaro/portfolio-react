@@ -1,0 +1,23 @@
+@import 'styles/variables';
+@import 'styles/breakpoints';
+
+
+.thanks {
+    background-color: $background;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 0 2rem;
+    max-width: 1366px;
+    margin: 2em auto;
+    &__title {
+        font-size: 2.5em;
+        grid-column: 2 / span 10;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+    &__text {
+        grid-column: 2 / span 10;
+        font-size: 1.2em;
+    }
+}

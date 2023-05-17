@@ -1,7 +1,6 @@
 import Styles from './Home.module.scss';
 import ImageTopo from 'assets/imagem-principal.jpg';
 import Recentes from './Recentes';
-import Botao from 'components/Button';
 import Cta from './Cta';
 import CallToWork from './CallToWork';
 import { Link } from 'react-router-dom';
@@ -21,9 +20,7 @@ export default function Home () {
                     As a front-end web developer and digital designer, I'm passionate about creating professional, modern, and search engine-optimized websites that stand out on the internet and attract more customers.
                     </p>
                     <div className={Styles.container__botaoWraper}>
-                    <Botao type="button">
-                        Contact
-                    </Botao>
+                    <Link className={Styles.container__botaoWraper__link} to={"/contatos"}>Contact</Link>
                     or
                     <Link className={Styles.container__botaoWraper__link} to={"/sobre"}>Read About Me</Link>
                     </div>

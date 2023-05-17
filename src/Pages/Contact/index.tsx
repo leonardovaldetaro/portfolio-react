@@ -20,7 +20,7 @@ export default function Contact () {
             <article id='wrapper' className={Styles.formContainer__wrapper}>
                 <form 
                     className={Styles.form}
-                    action="/api"
+                    action="https://api.sheetmonkey.io/form/qAPGBQpdud59bjCuFamCi1"
                     method="post" // default to post
                     onSubmit={() => {}} // function to be called before the request
                 >
