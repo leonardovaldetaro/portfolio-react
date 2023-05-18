@@ -4,6 +4,7 @@ import Recentes from './Recentes';
 import Cta from './Cta';
 import CallToWork from './CallToWork';
 import { Link } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Home () {
     return (
@@ -29,6 +30,7 @@ export default function Home () {
                 <Cta />
                 <Recentes />
                 <CallToWork />
+                <Analytics />
             </article>
         </>
     );
