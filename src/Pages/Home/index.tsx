@@ -1,5 +1,5 @@
 import Styles from './Home.module.scss';
-import ImageTopo from 'assets/imagem-principal.jpg';
+import ImageTopo from 'assets/7118756_3426523.png';
 import Recentes from './Recentes';
 import Cta from './Cta';
 import CallToWork from './CallToWork';
