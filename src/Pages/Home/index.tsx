@@ -14,7 +14,7 @@ export default function Home () {
                         Leonardo Valdetaro
                     </h2>
                     <h1 className={Styles.container__title}>
-                        Frontend web developer,<br /> Digital designer.
+                        Front-end web developer,<br /> Digital designer.
                     </h1>
                     <p className={Styles.container__text}>
                     As a front-end web developer and digital designer, I'm passionate about creating professional, modern, and search engine-optimized websites that stand out on the internet and attract more customers.
