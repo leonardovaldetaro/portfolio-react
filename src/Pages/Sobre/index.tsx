@@ -33,6 +33,7 @@ export default function Sobre () {
                 </p>
                 <img src={ImageTopo} alt="" className={Styles.sobre__container__img} />
                 <div className={Styles.sobre__container__tools}>
+                    <h2 className={Styles.sobre__container__tools__title}>Tools and Skills</h2>
                     <h2 className={Styles.sobre__container__tools__titleDesign}>Design tools</h2>
                     <h3 className={Styles.sobre__container__tools__namesDesign}>
                         Photoshop<em> / </em>
@@ -57,12 +58,14 @@ export default function Sobre () {
                         Wordpress<em> / </em>seo
                     </h3>
                 </div>
+                <h2 className={Styles.sobre__container__titleText}>Over 8 years of experience</h2>
                 <p className={Styles.sobre__container__text}>
                     Over the years, I have developed a passion for creating incredible and functional interfaces that not only meet the users' needs but also impress them. My goal is to make the user experience as enjoyable as possible, making navigation and interaction with the site easier.
                 </p>
                 <p className={Styles.sobre__container__text}>
                     As a proactive collaborator, I am always looking for opportunities to learn and grow. With excellent communication skills, I am able to work in teams and contribute to a collaborative and productive environment.
                 </p>
+                <h2 className={Styles.sobre__container__titleText}>Turning Your Vision into Reality: Experienced Web Developer at Your Service!</h2>
                 <p className={Styles.sobre__container__text}>
                     If you are looking for a passionate and experienced web developer who can turn your vision into reality, <Link className={Styles.sobre__container__link} to="/contatos">please contact me</Link>. I will be happy to talk about how I can help you achieve your online goals. <a href="https://read.cv/leonardovaldetaro" className={Styles.sobre__container__link}>Access my resume</a> and social medias.</p>
                 <div className={Styles.sobre__mdSociais}>
