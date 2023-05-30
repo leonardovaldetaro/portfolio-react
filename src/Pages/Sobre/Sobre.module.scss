@@ -46,7 +46,7 @@
             display: grid;
             grid-template-columns: repeat(9, 1fr);
             margin: 4em 0 6em;
-            padding: 0 0 8em;
+            padding: 0 0 4em;
             border-bottom: 1px solid $light-grey;
             @media (max-width: $desktop_xsm) {
                 padding: 0 0 2em;
@@ -67,7 +67,7 @@
                 text-transform: uppercase;
                 padding-top: 5px;
                 padding-bottom: 5px;
-                grid-column: 2 / span 3;
+                grid-column: 1 / span 3;
                 @media (max-width: $desktop_xsm) {
                     grid-column: 1 / span 8;
                 }
@@ -79,8 +79,8 @@
                 text-transform: uppercase;
                 padding-top: 5px;
                 padding-bottom: 5px;
-                grid-column: 7 / span 3;
-                grid-row: 1;
+                grid-column: 6 / span 3;
+                grid-row: 2;
                 @media (max-width: $desktop_xsm) {
                     grid-column: 1 / span 8;
                     grid-row: 4;

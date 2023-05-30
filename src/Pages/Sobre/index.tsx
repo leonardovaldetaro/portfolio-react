@@ -55,7 +55,7 @@ export default function Sobre () {
                         SASS<em> / </em>
                         TypeScript<em> / </em>
                         Git<em> / </em>GitHub <em> / </em>
-                        Wordpress<em> / </em>seo
+                        Wordpress<em> / </em>SEO
                     </h3>
                 </div>
                 <h2 className={Styles.sobre__container__titleText}>Over 8 years of experience</h2>
@@ -65,7 +65,7 @@ export default function Sobre () {
                 <p className={Styles.sobre__container__text}>
                     As a proactive collaborator, I am always looking for opportunities to learn and grow. With excellent communication skills, I am able to work in teams and contribute to a collaborative and productive environment.
                 </p>
-                <h2 className={Styles.sobre__container__titleText}>Turning Your Vision into Reality: Experienced Web Developer at Your Service!</h2>
+                <h2 className={Styles.sobre__container__titleText}>Turning Your Vision into Reality!</h2>
                 <p className={Styles.sobre__container__text}>
                     If you are looking for a passionate and experienced web developer who can turn your vision into reality, <Link className={Styles.sobre__container__link} to="/contatos">please contact me</Link>. I will be happy to talk about how I can help you achieve your online goals. <a href="https://read.cv/leonardovaldetaro" className={Styles.sobre__container__link}>Access my resume</a> and social medias.</p>
                 <div className={Styles.sobre__mdSociais}>
