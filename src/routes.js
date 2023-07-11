@@ -1,5 +1,6 @@
 import Contact from 'Pages/Contact';
 import Home from 'Pages/Home';
+import NotFound from 'Pages/NotFound';
 import Projeto from 'Pages/Projeto';
 import Sobre from 'Pages/Sobre';
 import Thanks from 'Pages/Thanks';
@@ -17,7 +18,8 @@ export default function AppRouter () {
                     <Route path='sobre' element={<Sobre />} />
                     <Route path='contatos' element={<Contact />} />
                     <Route path='projeto/:id' element={<Projeto />} />
-                    <Route path='*' element={<Thanks />} />
+                    <Route path='thanks' element={<Thanks />} />
+                    <Route path='*' element={<NotFound />} />
                 </Routes>
                 <Footer />
             </Router>

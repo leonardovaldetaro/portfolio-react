@@ -1,5 +1,5 @@
 import Styles from './Cta.module.scss';
-import ImageCta from 'assets/teste3.jpg';
+import ImageCta from 'assets/photo-1519222970733-f546218fa6d7.jpg';
 import { Link } from 'react-router-dom';
 import { MdTrendingFlat } from 'react-icons/md';
 
