@@ -25,17 +25,16 @@ const rotasSocial = [{
 export default function Sobre () {
     return (
         <section className={Styles.sobre}>
-            <article className={Styles.sobre__container}>
-                <h2 className={Styles.sobre__container__subtitle}>A FEW WORDS ABOUT ME</h2>
-                <h1 className={Styles.sobre__container__title}>I&rsquo;m a skilled front-end web developer and experienced digital designer. I specialize in creating responsive websites and functional user interfaces that meet the needs of my clients and their target audience.</h1>
-                <p className={Styles.sobre__container__mainText}>
+                <h2 className={Styles.sobre__subtitle}>A FEW WORDS ABOUT ME</h2>
+                <h1 className={Styles.sobre__title}>I&rsquo;m a skilled front-end web developer and experienced digital designer. I specialize in creating responsive websites and functional user interfaces that meet the needs of my clients and their target audience.</h1>
+                <p className={Styles.sobre__mainText}>
                 My process starts with a thorough analysis of your business and target audience to understand your needs and goals. From there, I develop a personalized strategy for front-end development and digital design that incorporates the latest trends and best practices in the industry. 
                 </p>
-                <img src={ImageTopo} alt="" className={Styles.sobre__container__img} />
-                <div className={Styles.sobre__container__tools}>
-                    <h2 className={Styles.sobre__container__tools__title}>Tools and Skills</h2>
-                    <h2 className={Styles.sobre__container__tools__titleDesign}>Design tools</h2>
-                    <h3 className={Styles.sobre__container__tools__namesDesign}>
+                <img src={ImageTopo} alt="" className={Styles.sobre__img} />
+                <div className={Styles.sobre__tools}>
+                    <h2 className={Styles.sobre__tools__title}>Tools and Skills</h2>
+                    <h2 className={Styles.sobre__tools__titleDesign}>Design tools</h2>
+                    <h3 className={Styles.sobre__tools__namesDesign}>
                         Photoshop<em> / </em>
                         Illustrator <em> / </em> Figma<em> / </em>
                         InDesign<em> / </em>
@@ -44,8 +43,8 @@ export default function Sobre () {
                         Design Pattern<em> / </em>
                         Design Components<em> / </em>Design Thinking
                     </h3>
-                    <h2 className={Styles.sobre__container__tools__titleTools}>Frontend skills</h2>
-                    <h3 className={Styles.sobre__container__tools__namesTools}>
+                    <h2 className={Styles.sobre__tools__titleTools}>Frontend skills</h2>
+                    <h3 className={Styles.sobre__tools__namesTools}>
                         HTML<em> / </em>
                         CSS<em> / </em>
                         javaScript<em> / </em>
@@ -58,16 +57,16 @@ export default function Sobre () {
                         Wordpress<em> / </em>SEO
                     </h3>
                 </div>
-                <h2 className={Styles.sobre__container__titleText}>Over 8 years of experience</h2>
-                <p className={Styles.sobre__container__text}>
+                <h2 className={Styles.sobre__titleExpirience}>Over 8 years of experience</h2>
+                <p className={Styles.sobre__textExpirience}>
                     Over the years, I have developed a passion for creating incredible and functional interfaces that not only meet the users' needs but also impress them. My goal is to make the user experience as enjoyable as possible, making navigation and interaction with the site easier.
                 </p>
-                <p className={Styles.sobre__container__text}>
+                <p className={Styles.sobre__textExpirience__proactive}>
                     As a proactive collaborator, I am always looking for opportunities to learn and grow. With excellent communication skills, I am able to work in teams and contribute to a collaborative and productive environment.
                 </p>
-                <h2 className={Styles.sobre__container__titleText}>Turning Your Vision into Reality!</h2>
-                <p className={Styles.sobre__container__text}>
-                    If you are looking for a passionate and experienced web developer who can turn your vision into reality, <Link className={Styles.sobre__container__link} to="/contatos">please contact me</Link>. I will be happy to talk about how I can help you achieve your online goals. <a href="https://read.cv/leonardovaldetaro" className={Styles.sobre__container__link}>Access my resume</a> and social medias.</p>
+                <h2 className={Styles.sobre__titleVision}>Turning Your Vision into Reality!</h2>
+                <p className={Styles.sobre__textVision}>
+                    If you are looking for a passionate and experienced web developer who can turn your vision into reality, <Link className={Styles.sobre__link} to="/contatos">please contact me</Link>. I will be happy to talk about how I can help you achieve your online goals. <a href="https://read.cv/leonardovaldetaro" className={Styles.sobre__link}>Access my resume</a> and social medias.</p>
                 <div className={Styles.sobre__mdSociais}>
                     <ul className={Styles.sobre__mdSociais__list}>
                         {rotasSocial.map((rota, index) =>(
@@ -77,7 +76,6 @@ export default function Sobre () {
                         ))}
                     </ul>
                 </div>
-            </article>
         </section>
     );
 }

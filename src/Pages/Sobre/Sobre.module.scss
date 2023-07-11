@@ -9,6 +9,7 @@
     padding: 0 2rem;
     max-width: 1366px;
     margin: 2em auto 3em;
+    grid-row-gap: 1em;
     @media (max-width: $desktop_xsm) {
         grid-template-columns: repeat(8, 1fr);
     }
@@ -16,126 +17,176 @@
         font-size: 1.3rem;
         line-height: 1.8rem;
     }
-    &__container {
-        grid-column: 2 / span 10;
+    &__subtitle {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: $dark-grey;
+        grid-column: 2 / span 3;
+        grid-row: 1;
         @media (max-width: $desktop_xsm) {
-			grid-column: 1 / span 8;
-		}
-        &__subtitle {
-            font-size: 1.2rem;
-            text-transform: initial;
-            font-weight: 500;
-            color: $dark-grey;
-            margin-bottom: 2rem;
+            grid-column: 1 / span 8;
+        }
+    }
+    &__title {
+        font-size: 1.8rem;
+        grid-column: 2 / span 10;
+        grid-row: 2;
+        @media (max-width: $desktop_xsm) {
+            grid-column: 1 / span 8;
+        }
+    }
+    &__mainText { 
+        font-weight: bolder;
+        color: $dark-grey;
+        grid-column: 2 / span 10;
+        grid-row: 3;
+        @media (max-width: $desktop_xsm) {
+            grid-column: 1 / span 8;
+        }
+    }
+    &__img {
+        width: 100%;
+        margin-bottom: 4em;
+        grid-column: 1 / span 12;
+        grid-row: 4;
+        @media (max-width: $desktop_xsm) {
+            grid-column: 1 / span 8;
+            margin-bottom: 1em;
+        }
+    }
+    &__tools {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        padding: 0 0 4em;
+        border-bottom: 1px solid $light-grey;
+        grid-column: 2 / span 10;
+        grid-row: 5;
+        @media (max-width: $desktop_xsm) {
+            padding: 0 0 2em;
+            margin: 0 0 2em;
+            grid-column: 1 / span 8;
         }
         &__title {
-            font-size: 1.8rem;
-            margin-bottom: 0.5em;
-        }
-        &__mainText { 
-            font-weight: bolder;
-            margin-bottom: .5em;
             color: $dark-grey;
-            margin-bottom: 4em;
-        }
-        &__img {
-            width: 100%;
-            margin-bottom: 4em;
-        }
-        &__tools {
-            display: grid;
-            grid-template-columns: repeat(9, 1fr);
-            margin: 4em 0 6em;
-            padding: 0 0 4em;
-            border-bottom: 1px solid $light-grey;
-            @media (max-width: $desktop_xsm) {
-                padding: 0 0 2em;
-                margin: 0 0 2em;
-            }
-            &__title {
-                color: $dark-grey;
-                font-size: 2em;
-                font-weight: 300;
-                text-transform: uppercase;
-                grid-column: 1 / span 8;
-                margin-bottom: 1em;
-            }
-            &__titleDesign {
-                color: $dark-grey;
-                font-size: .875rem;
-                line-height: 1.25rem;
-                text-transform: uppercase;
-                padding-top: 5px;
-                padding-bottom: 5px;
-                grid-column: 1 / span 3;
-                @media (max-width: $desktop_xsm) {
-                    grid-column: 1 / span 8;
-                }
-            }
-            &__titleTools {
-                color: $dark-grey;
-                font-size: .875rem;
-                line-height: 1.25rem;
-                text-transform: uppercase;
-                padding-top: 5px;
-                padding-bottom: 5px;
-                grid-column: 6 / span 3;
-                grid-row: 2;
-                @media (max-width: $desktop_xsm) {
-                    grid-column: 1 / span 8;
-                    grid-row: 4;
-                }
-            }
-            &__namesDesign {
-                color: $dark;
-                font-size: 1.375rem;
-                line-height: 1.875rem;
-                padding-top: 2px;
-                padding-bottom: 3px;
-                grid-column: 1 / span 4;
-                @media (max-width: $desktop_xsm) {
-                    grid-column: 1 / span 8;
-                    padding-bottom: 2em;
-                }
-            }
-            &__namesTools {
-                color: $dark;
-                font-size: 1.375rem;
-                line-height: 1.875rem;
-                padding-top: 2px;
-                padding-bottom: 3px;
-                grid-column: 6 / span 4;
-                @media (max-width: $desktop_xsm) {
-                    grid-column: 1 / span 8;
-                }
-            }
-        }
-        &__titleText {
-            color: $dark;
-            font-size: 2.125rem;
-            line-height: 2.5rem;
+            font-size: 2em;
+            font-weight: 300;
+            text-transform: uppercase;
+            grid-column: 1 / span 8;
             margin-bottom: 1em;
-            margin-top: 2em;
         }
-        &__text {
-            margin-bottom: .5em;
+        &__titleDesign {
+            color: $dark-grey;
+            font-size: .875rem;
+            line-height: 1.25rem;
+            text-transform: uppercase;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            grid-column: 1 / span 3;
+            @media (max-width: $desktop_xsm) {
+                grid-column: 1 / span 8;
+            }
         }
-        &__link {
-            border-bottom: 1px solid $lightBlue;
-            color: $lightBlue;
-            transition: all .3s;
-            &:hover {
-                opacity: .6;
+        &__titleTools {
+            color: $dark-grey;
+            font-size: .875rem;
+            line-height: 1.25rem;
+            text-transform: uppercase;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            grid-column: 6 / span 3;
+            grid-row: 2;
+            @media (max-width: $desktop_xsm) {
+                grid-column: 1 / span 8;
+                grid-row: 4;
+            }
+        }
+        &__namesDesign {
+            color: $dark;
+            font-size: 1.375rem;
+            line-height: 1.875rem;
+            padding-top: 2px;
+            padding-bottom: 3px;
+            grid-column: 1 / span 4;
+            @media (max-width: $desktop_xsm) {
+                grid-column: 1 / span 8;
+                padding-bottom: 2em;
+            }
+        }
+        &__namesTools {
+            color: $dark;
+            font-size: 1.375rem;
+            line-height: 1.875rem;
+            padding-top: 2px;
+            padding-bottom: 3px;
+            grid-column: 6 / span 4;
+            @media (max-width: $desktop_xsm) {
+                grid-column: 1 / span 8;
             }
         }
     }
+    &__titleExpirience {
+        color: $dark;
+        font-size: 2.125rem;
+        line-height: 2.5rem;
+        grid-column: 2 / span 10;
+        grid-row: 6;
+        @media (max-width: $desktop_xsm) {
+            grid-column: 1 / span 8;
+        }
+    }
+    &__textExpirience {
+        grid-column: 2 / span 10;
+        grid-row: 7;
+        @media (max-width: $desktop_xsm) {
+            grid-column: 1 / span 8;
+        }
+        &__proactive {
+            grid-column: 2 / span 10;
+            grid-row: 8;
+            margin-bottom: 2em;
+            @media (max-width: $desktop_xsm) {
+                grid-column: 1 / span 8;
+            }
+        }
+    }
+    &__titleVision {
+        color: $dark;
+        font-size: 2.125rem;
+        line-height: 2.5rem;
+        grid-column: 2 / span 10;
+        grid-row: 9;
+        @media (max-width: $desktop_xsm) {
+            grid-column: 1 / span 8;
+        }
+    }
+    &__textVision {
+        grid-column: 2 / span 10;
+        grid-row: 10;
+        @media (max-width: $desktop_xsm) {
+            grid-column: 1 / span 8;
+        }
+    }
+    &__link {
+        border-bottom: 1px solid $lightBlue;
+        color: $lightBlue;
+        transition: all .3s;
+        &:hover {
+            opacity: .6;
+           }
+    }
     &__mdSociais {
         grid-column: 1 / span 6;
-        margin-top: 3em;
+        margin-bottom: 3em;
+        grid-column: 2 / span 10;
+        grid-row: 11;
+        @media (max-width: $desktop_xsm) {
+            grid-column: 1 / span 8;
+        }
         &__list {
             display: flex;
             &__item {
-                list-style: none;margin-right: 1em;
+                list-style: none;
+                margin-right: 1em;
             }
         }
     }
