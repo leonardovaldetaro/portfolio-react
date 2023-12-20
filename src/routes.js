@@ -6,12 +6,14 @@ import Sobre from 'Pages/Sobre';
 import Thanks from 'Pages/Thanks';
 import Footer from 'components/Footer';
 import Header from 'components/Header';
+import ScrollToTop from 'components/ScrollToTop';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 export default function AppRouter () {
     return (
         <main className='container'>
             <Router>
+                <ScrollToTop />
                 <Header />
                 <Routes>
                     <Route index element={<Home />} />

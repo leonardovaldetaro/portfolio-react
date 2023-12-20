@@ -47,7 +47,7 @@ export default function Contact () {
                             className={Styles.form__field__label} 
                             htmlFor='email'
                         >
-                            E-mail
+                            E-mail*
                         </label>
 
                         <input 
@@ -65,7 +65,7 @@ export default function Contact () {
                             className={Styles.form__field__label} 
                             htmlFor='message'
                         >
-                            Message
+                            Message*
                         </label>
 
                         <textarea 

@@ -21,27 +21,33 @@
         font-size: 1.2rem;
         font-weight: 500;
         color: $dark-grey;
-        grid-column: 2 / span 3;
+        grid-column: 1 / span 12;
         grid-row: 1;
+        text-align: center;
         @media (max-width: $desktop_xsm) {
             grid-column: 1 / span 8;
+            text-align: left;
         }
     }
     &__title {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
         grid-column: 2 / span 10;
         grid-row: 2;
+        text-align: center;
         @media (max-width: $desktop_xsm) {
             grid-column: 1 / span 8;
+            text-align: left;
         }
     }
     &__mainText { 
         font-weight: bolder;
         color: $dark-grey;
-        grid-column: 2 / span 10;
+        grid-column: 3 / span 8;
         grid-row: 3;
+        text-align: center;
         @media (max-width: $desktop_xsm) {
             grid-column: 1 / span 8;
+            text-align: left;
         }
     }
     &__img {
@@ -71,8 +77,12 @@
             font-size: 2em;
             font-weight: 300;
             text-transform: uppercase;
-            grid-column: 1 / span 8;
+            grid-column: 1 / span 9;
             margin-bottom: 1em;
+            text-align: center;
+            @media (max-width: $desktop_xsm) {
+                text-align: left;
+            }
         }
         &__titleDesign {
             color: $dark-grey;
@@ -83,7 +93,7 @@
             padding-bottom: 5px;
             grid-column: 1 / span 3;
             @media (max-width: $desktop_xsm) {
-                grid-column: 1 / span 8;
+                grid-column: 1 / span 9;
             }
         }
         &__titleTools {
@@ -96,7 +106,7 @@
             grid-column: 6 / span 3;
             grid-row: 2;
             @media (max-width: $desktop_xsm) {
-                grid-column: 1 / span 8;
+                grid-column: 1 / span 9;
                 grid-row: 4;
             }
         }
@@ -108,7 +118,7 @@
             padding-bottom: 3px;
             grid-column: 1 / span 4;
             @media (max-width: $desktop_xsm) {
-                grid-column: 1 / span 8;
+                grid-column: 1 / span 9;
                 padding-bottom: 2em;
             }
         }
@@ -120,7 +130,7 @@
             padding-bottom: 3px;
             grid-column: 6 / span 4;
             @media (max-width: $desktop_xsm) {
-                grid-column: 1 / span 8;
+                grid-column: 1 / span 9;
             }
         }
     }
@@ -128,24 +138,32 @@
         color: $dark;
         font-size: 2.125rem;
         line-height: 2.5rem;
-        grid-column: 2 / span 10;
+        grid-column: 1 / span 12;
         grid-row: 6;
+        text-align: center;
+        margin-top: 2em;
         @media (max-width: $desktop_xsm) {
             grid-column: 1 / span 8;
+            margin-top: 0;
+            text-align: left;
         }
     }
     &__textExpirience {
         grid-column: 2 / span 10;
         grid-row: 7;
+        text-align: center;
         @media (max-width: $desktop_xsm) {
             grid-column: 1 / span 8;
+            text-align: left;
         }
         &__proactive {
             grid-column: 2 / span 10;
             grid-row: 8;
             margin-bottom: 2em;
+            text-align: center;
             @media (max-width: $desktop_xsm) {
                 grid-column: 1 / span 8;
+                text-align: left;
             }
         }
     }
@@ -155,8 +173,10 @@
         line-height: 2.5rem;
         grid-column: 2 / span 10;
         grid-row: 9;
+        text-align: center;
         @media (max-width: $desktop_xsm) {
             grid-column: 1 / span 8;
+            text-align: left;
         }
     }
     &__textVision {
@@ -175,18 +195,17 @@
            }
     }
     &__mdSociais {
-        grid-column: 1 / span 6;
         margin-bottom: 3em;
-        grid-column: 2 / span 10;
-        grid-row: 11;
+        grid-column: 6 / span 2;
+        align-self: center;
         @media (max-width: $desktop_xsm) {
-            grid-column: 1 / span 8;
+            grid-column: 1 / span 5;
         }
         &__list {
             display: flex;
+            justify-content: space-between;
             &__item {
                 list-style: none;
-                margin-right: 1em;
             }
         }
     }

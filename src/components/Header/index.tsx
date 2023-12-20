@@ -34,14 +34,14 @@ export default function Header () {
             <div className={Styles.header__logo}>
                 {rotaLogo.map((rota, index) => (
                     <figure key={index}>
-                        <Link to={rota.to} preventScrollReset={true}>{rota.label}</Link>
+                        <Link to={rota.to}>{rota.label}</Link>
                     </figure>
                 ))}
             </div>
             <div className={Styles.header__title}>
                 {rotaName.map((rota, index) => (
                     <div key={index}>
-                        <Link to={rota.to} preventScrollReset={true}>{rota.label}</Link>
+                        <Link to={rota.to}>{rota.label}</Link>
                     </div>
                 ))}
             </div>
@@ -52,7 +52,6 @@ export default function Header () {
                         className={({ isActive, isPending }) =>
                         isPending ? "pending" : isActive ? "active" : ""
                     }
-                    preventScrollReset={true}
                     to={rota.to}
                     >
                         {rota.label}
@@ -67,9 +66,7 @@ export default function Header () {
                         className={({ isActive, isPending }) =>
                         isPending ? "pending" : isActive ? "active" : ""
                     }
-                    to={rota.to}
-                    preventScrollReset={true}
-                    >
+                    to={rota.to}>
                         {rota.label}
                     </NavLink>
                     </div>
@@ -82,9 +79,7 @@ export default function Header () {
                             className={({ isActive, isPending }) =>
                             isPending ? "pending" : isActive ? "active" : ""
                         }
-                        to={rota.to}
-                        preventScrollReset={false}
-                        >
+                        to={rota.to}>
                             {rota.label}
                         </NavLink>
                     </div>
